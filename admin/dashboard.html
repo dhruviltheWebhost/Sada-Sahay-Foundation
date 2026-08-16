@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <title>
+        Admin Dashboard | Sada Sahay Foundation
+    </title>
+
+
+    <!-- Gujarati Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Dashboard CSS -->
+
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+     SIDEBAR
+========================================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+
+        <div class="sidebar-brand">
+
+            <img src="../assets/logo.png" alt="સદા સહાય ફાઉન્ડેશન">
+
+            <div>
+
+                <strong>
+                    Sada Sahay
+                </strong>
+
+                <span>
+                    Admin Panel
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <nav class="sidebar-nav">
+
+            <a href="#overview" class="nav-item active">
+
+                <span class="nav-icon">
+                    ▦
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a href="#pending" class="nav-item">
+
+                <span class="nav-icon">
+                    ◷
+                </span>
+
+                <span>
+                    ચકાસણી બાકી
+                </span>
+
+                <span class="nav-badge" id="sidebarPendingCount">
+                    0
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <span class="nav-icon">
+                    ✓
+                </span>
+
+                <span>
+                    Confirmed
+                </span>
+
+            </a>
+
+        </nav>
+
+
+
+        <div class="sidebar-bottom">
+
+            <div class="campaign-mini">
+
+                <span>
+                    CAMPAIGN
+                </span>
+
+                <strong>
+                    ભાદરવી પૂનમ ૨૦૨૬
+                </strong>
+
+            </div>
+
+
+            <button id="logoutBtn" class="logout-btn" type="button">
+
+                <span>
+                    ↪
+                </span>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================================
+     MOBILE HEADER
+========================================= -->
+
+    <header class="mobile-header">
+
+        <button id="mobileSidebarBtn" class="mobile-sidebar-btn" type="button" aria-label="મેનુ ખોલો">
+            ☰
+        </button>
+
+
+        <img src="../assets/logo.png" alt="સદા સહાય ફાઉન્ડેશન">
+
+
+        <span>
+            Admin
+        </span>
+
+    </header>
+
+
+
+    <!-- =========================================
+     MAIN CONTENT
+========================================= -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =====================================
+         TOP BAR
+    ====================================== -->
+
+        <div class="topbar">
+
+            <div>
+
+                <span class="dashboard-eyebrow">
+                    ADMINISTRATION
+                </span>
+
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+
+                <p id="adminInfo">
+                    Admin information loading...
+                </p>
+
+            </div>
+
+
+            <div class="topbar-status">
+
+                <span class="online-dot"></span>
+
+                System Active
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+         OVERVIEW
+    ====================================== -->
+
+        <section id="overview" class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>
+                        SERVICE OVERVIEW
+                    </span>
+
+                    <h2>
+                        સેવા સહયોગ
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stats-grid">
+
+
+                <!-- TOTAL COLLECTION -->
+
+                <article class="stat-card collection-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon">
+                            ₹
+                        </div>
+
+                        <span class="stat-label">
+                            VERIFIED
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-content">
+
+                        <span>
+                            કુલ મળેલ સહયોગ
+                        </span>
+
+                        <strong id="totalCollected">
+                            ₹0
+                        </strong>
+
+                        <small>
+                            ચકાસાયેલ સેવા સહયોગ
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- SUPPORTERS -->
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon">
+                            ♡
+                        </div>
+
+                        <span class="stat-label">
+                            SUPPORTERS
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-content">
+
+                        <span>
+                            સેવા સહયોગીઓ
+                        </span>
+
+                        <strong id="supporterCount">
+                            0
+                        </strong>
+
+                        <small>
+                            Confirmed supporters
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PENDING -->
+
+                <article class="stat-card pending-stat">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon">
+                            ◷
+                        </div>
+
+                        <span class="stat-label">
+                            ACTION REQUIRED
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-content">
+
+                        <span>
+                            ચકાસણી બાકી
+                        </span>
+
+                        <strong id="pendingCount">
+                            0
+                        </strong>
+
+                        <small>
+                            Payments awaiting verification
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+         PENDING PAYMENTS
+    ====================================== -->
+
+        <section id="pending" class="dashboard-section pending-section">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>
+                        PAYMENT VERIFICATION
+                    </span>
+
+                    <h2>
+                        ચકાસણી બાકી
+                    </h2>
+
+                    <p>
+                        GPay / UPI માં મળેલી ચુકવણી સાથે
+                        Transaction ID ચકાસો.
+                    </p>
+
+                </div>
+
+
+                <div class="pending-indicator">
+
+                    <span id="pendingHeaderCount">
+                        0
+                    </span>
+
+                    બાકી
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PENDING DONATIONS -->
+
+            <div id="pendingDonations" class="pending-list">
+
+                <div class="loading-card">
+
+                    <div class="loading-spinner">
+                    </div>
+
+                    <p>
+                        ચુકવણીની માહિતી લોડ થઈ રહી છે...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+         ADMIN NOTICE
+    ====================================== -->
+
+        <section class="admin-notice">
+
+            <div class="notice-icon">
+                !
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ચુકવણી manually verify કરો
+                </strong>
+
+                <p>
+
+                    Confirm કરતા પહેલા GPay / UPI
+                    merchant account માં Transaction ID,
+                    રકમ અને ચુકવણીની વિગતો ચકાસો.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+     MOBILE OVERLAY
+========================================= -->
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+    <!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+    <script type="module" src="../js/admin-dashboard.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="સદા સહાય ફાઉન્ડેશન માટે સેવા સહયોગ ચુકવણી.">
+
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+    <title>
+        ચુકવણી | સદા સહાય ફાઉન્ડેશન
+    </title>
+
+
+    <!-- Gujarati Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Payment CSS -->
+
+    <link rel="stylesheet" href="./css/payment.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+     HEADER
+========================================= -->
+
+    <header class="payment-header">
+
+        <div class="payment-container header-inner">
+
+
+            <a href="./index.html" class="payment-brand">
+
+                <img src="./assets/logo.png" alt="સદા સહાય ફાઉન્ડેશન">
+
+            </a>
+
+
+            <a href="./index.html" class="home-link">
+
+                ← હોમ
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+     MAIN
+========================================= -->
+
+    <main>
+
+
+        <section class="payment-page">
+
+
+            <div class="payment-container payment-layout">
+
+
+                <!-- =================================
+             PAGE INTRO
+        ================================== -->
+
+                <div class="payment-intro">
+
+                    <span class="payment-eyebrow">
+                        ભાદરવી પૂનમ સેવા ૨૦૨૬
+                    </span>
+
+
+                    <h1>
+                        સેવા સહયોગ
+                        <span>પૂર્ણ કરો</span>
+                    </h1>
+
+
+                    <p>
+                        નીચે દર્શાવેલ રકમ માટે GPay / UPI
+                        દ્વારા ચુકવણી કરો.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================
+             DONATION SUMMARY
+        ================================== -->
+
+                <section class="summary-card">
+
+
+                    <div class="summary-row">
+
+                        <div>
+
+                            <span class="summary-label">
+                                સેવા સંદર્ભ
+                            </span>
+
+
+                            <strong id="donationReference" class="reference-value">
+                                Loading...
+                            </strong>
+
+                        </div>
+
+
+                        <span class="status-badge">
+                            ચુકવણી બાકી
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="amount-box">
+
+                        <span>
+                            સહયોગ રકમ
+                        </span>
+
+
+                        <strong id="amount">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+             PAYMENT CARD
+        ================================== -->
+
+                <section class="payment-card">
+
+
+                    <div class="section-title">
+
+                        <span class="step-number">
+                            1
+                        </span>
+
+
+                        <div>
+
+                            <h2>
+                                ચુકવણી કરો
+                            </h2>
+
+                            <p>
+                                QR Code સ્કેન કરીને
+                                GPay / UPI દ્વારા ચુકવણી કરો.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- QR -->
+
+                    <div class="qr-wrapper">
+
+                        <div id="qrcode" class="qr-code"></div>
+
+                    </div>
+
+
+                    <p class="qr-note">
+
+                        તમારા UPI એપથી QR Code સ્કેન કરો
+
+                    </p>
+
+
+
+                    <div class="or-divider">
+
+                        <span>
+                            અથવા
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- UPI BUTTON -->
+
+                    <a id="upiLink" href="#" class="upi-button">
+
+                        <span class="upi-icon">
+                            ₹
+                        </span>
+
+
+                        <span>
+                            GPay / UPI App માં ચુકવણી કરો
+                        </span>
+
+
+                        <span class="upi-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                </section>
+
+
+
+                <!-- =================================
+             TRANSACTION CARD
+        ================================== -->
+
+                <section class="transaction-card">
+
+
+                    <div class="section-title">
+
+                        <span class="step-number">
+                            2
+                        </span>
+
+
+                        <div>
+
+                            <h2>
+                                ચુકવણી કર્યા પછી
+                            </h2>
+
+                            <p>
+                                GPay / UPI માં ચુકવણી પૂર્ણ થયા
+                                પછી Transaction ID અહીં દાખલ કરો.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <form id="paymentForm">
+
+
+                        <div class="transaction-field">
+
+                            <label for="upiTransactionId">
+
+                                UPI Transaction ID
+
+                                <span>
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <input type="text" id="upiTransactionId" required minlength="6" maxlength="100"
+                                autocomplete="off" placeholder="Transaction ID દાખલ કરો">
+
+
+                            <small>
+                                GPay / UPI ચુકવણીની વિગતોમાં
+                                મળેલ Transaction ID દાખલ કરો.
+                            </small>
+
+                        </div>
+
+
+
+                        <button type="submit" id="submitPaymentButton" class="submit-payment">
+
+                            <span>
+                                મેં ચુકવણી કરી છે
+                            </span>
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+
+                    </form>
+
+
+                    <div id="paymentMessage" class="payment-message" aria-live="polite"></div>
+
+                </section>
+
+
+
+                <!-- =================================
+             VERIFICATION NOTICE
+        ================================== -->
+
+                <section class="verification-card">
+
+
+                    <div class="verification-icon">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            ચુકવણી ચકાસણી
+                        </h3>
+
+
+                        <p>
+
+                            તમારી ચુકવણીની અમારી ટીમ દ્વારા
+                            GPay / UPI માં ચકાસણી કરવામાં આવશે.
+                            ચુકવણી Confirm થયા બાદ તમને
+                            <strong>Seva ID</strong> આપવામાં આવશે.
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+             TRUST FOOTER
+        ================================== -->
+
+                <div class="payment-trust">
+
+                    <span>
+                        🔒
+                    </span>
+
+                    <p>
+                        તમારી ચુકવણીની માહિતી સુરક્ષિત રીતે
+                        નોંધવામાં આવે છે અને ચુકવણીની પુષ્ટિ
+                        અમારી ટીમ દ્વારા કરવામાં આવે છે.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+     QR CODE LIBRARY
+========================================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+
+
+
+    <!-- =========================================
+     PAYMENT JAVASCRIPT
+========================================= -->
+
+    <script type="module" src="./js/payment.js">
+    </script>
+
+
+</body>
+
+</html>

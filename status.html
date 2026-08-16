@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        મારી સેવા તપાસો | સદા સહાય ફાઉન્ડેશન
+    </title>
+
+    <meta
+        name="description"
+        content="તમારો Seva ID અથવા Donation Reference દાખલ કરીને સદા સહાય ફાઉન્ડેશનની સેવા અને ચુકવણીની સ્થિતિ તપાસો."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="canonical"
+        href="https://YOUR-DOMAIN.com/status.html"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="./assets/logo.png"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="status-header">
+
+    <div class="status-container header-inner">
+
+        <a
+            href="./index.html"
+            class="brand"
+        >
+
+            <img
+                src="./assets/logo.png"
+                alt="સદા સહાય ફાઉન્ડેશન"
+            >
+
+        </a>
+
+
+        <a
+            href="./index.html"
+            class="back-home"
+        >
+
+            ← મુખ્ય પેજ
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main>
+
+
+<section class="status-hero">
+
+    <div class="status-container">
+
+        <span class="eyebrow">
+            SEVA STATUS
+        </span>
+
+
+        <h1>
+            મારી સેવા તપાસો
+        </h1>
+
+
+        <p>
+            તમારી સેવા અને ચુકવણીની સ્થિતિ
+            સરળતાથી તપાસો.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     LOOKUP
+========================================= -->
+
+<section class="lookup-section">
+
+    <div class="status-container lookup-grid">
+
+
+        <!-- SEVA ID -->
+
+        <article class="lookup-card primary-card">
+
+            <div class="card-icon">
+                ✓
+            </div>
+
+
+            <span class="card-label">
+                સેવા ID
+            </span>
+
+
+            <h2>
+                સેવા ID દ્વારા તપાસો
+            </h2>
+
+
+            <p>
+                તમને વ્યક્તિગત રીતે આપવામાં આવેલ
+                Seva ID અહીં દાખલ કરો.
+            </p>
+
+
+            <form id="sevaForm">
+
+                <label for="sevaIdInput">
+                    સેવા ID
+                </label>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="sevaIdInput"
+                        required
+                        maxlength="30"
+                        autocomplete="off"
+                        placeholder="BP26-SXXXXXXXX"
+                    >
+
+                    <button type="submit">
+                        તપાસો
+                    </button>
+
+                </div>
+
+            </form>
+
+        </article>
+
+
+
+        <!-- DONATION REFERENCE -->
+
+        <article class="lookup-card">
+
+            <div class="card-icon reference-icon">
+                #
+            </div>
+
+
+            <span class="card-label">
+                સેવા સંદર્ભ
+            </span>
+
+
+            <h2>
+                સેવા સંદર્ભ દ્વારા તપાસો
+            </h2>
+
+
+            <p>
+                Seva ID હજુ મળ્યો નથી?
+                તમારા Donation Reference દ્વારા
+                ચુકવણીની સ્થિતિ તપાસો.
+            </p>
+
+
+            <form id="referenceForm">
+
+                <label for="referenceInput">
+                    સેવા સંદર્ભ
+                </label>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="referenceInput"
+                        required
+                        maxlength="30"
+                        autocomplete="off"
+                        placeholder="BP26-PXXXXXXXX"
+                    >
+
+                    <button type="submit">
+                        તપાસો
+                    </button>
+
+                </div>
+
+            </form>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     MESSAGE
+========================================= -->
+
+<section class="message-section">
+
+    <div class="status-container">
+
+        <p
+            id="statusMessage"
+            class="status-message"
+        ></p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     RESULT
+========================================= -->
+
+<section
+    class="result-section"
+    id="result"
+    hidden
+>
+
+    <div class="status-container">
+
+        <div class="result-card">
+
+
+            <div class="result-header">
+
+                <span class="eyebrow">
+                    SEVA STATUS
+                </span>
+
+
+                <h2 id="resultTitle">
+                </h2>
+
+            </div>
+
+
+
+            <!-- SEVA ID HIGHLIGHT -->
+
+            <div class="seva-id-box">
+
+                <span>
+                    તમારી સેવા ID
+                </span>
+
+
+                <strong id="resultSevaId">
+                    -
+                </strong>
+
+            </div>
+
+
+
+            <!-- DETAILS -->
+
+            <div class="result-details">
+
+
+                <div class="detail-row">
+
+                    <span>
+                        સેવા સંદર્ભ
+                    </span>
+
+                    <strong id="resultReference">
+                        -
+                    </strong>
+
+                </div>
+
+
+
+                <div class="detail-row">
+
+                    <span>
+                        સેવા સહયોગ
+                    </span>
+
+                    <strong>
+                        ₹<span id="resultAmount">
+                            0
+                        </span>
+                    </strong>
+
+                </div>
+
+
+
+                <div class="detail-row">
+
+                    <span>
+                        તારીખ
+                    </span>
+
+                    <strong id="resultDate">
+                        -
+                    </strong>
+
+                </div>
+
+
+
+                <div class="detail-row">
+
+                    <span>
+                        સ્થિતિ
+                    </span>
+
+                    <strong
+                        id="resultStatus"
+                        class="status-value"
+                    >
+                        -
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FOOTER -->
+
+            <div class="result-footer">
+
+                <span>
+                    સદા સહાય ફાઉન્ડેશન
+                </span>
+
+                <small>
+                    સેવા • સહયોગ • વિશ્વાસ
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     HELP
+========================================= -->
+
+<section class="help-section">
+
+    <div class="status-container">
+
+        <div class="help-card">
+
+            <div>
+                <span class="eyebrow">
+                    મદદ
+                </span>
+
+                <h2>
+                    Seva ID હજુ મળ્યો નથી?
+                </h2>
+
+                <p>
+                    જો તમારી ચુકવણીની સ્થિતિ Confirmed છે
+                    પરંતુ Seva ID વ્યક્તિગત રીતે મળ્યો નથી,
+                    તો સેવા સંદર્ભ સાચવી રાખો.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="status-footer">
+
+    <div class="status-container">
+
+        © 2026 Sada Sahay Foundation
+
+    </div>
+
+</footer>
+
+
+
+<script
+    type="module"
+    src="./js/status.js">
+</script>
+
+
+</body>
+
+</html>
