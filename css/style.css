@@ -207,6 +207,10 @@ a {
     align-items: center;
 }
 
+.hero h1 .hero-main-white {
+    color: inherit;
+}
+
 
 .hero-overlay {
 
@@ -1886,4 +1890,55 @@ a {
             background: #f3f6f8;
         }
     }
+}
+
+/* =========================================
+   LANGUAGE SWITCHER
+========================================= */
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language-switcher button {
+    border: 1px solid var(--border);
+    background: white;
+    color: #12304a;
+
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.language-switcher button:hover {
+    background: #f3f6f8;
+}
+
+.language-switcher button.active {
+    background: #12304a;
+    color: white;
+    border-color: #12304a;
+}
+
+
+@media (max-width: 800px) {
+
+    .language-switcher {
+        gap: 4px;
+    }
+
+    .language-switcher button {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+
 }

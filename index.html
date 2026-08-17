@@ -7,22 +7,23 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
+    <title data-i18n-title="indexPageTitle">
         સદા સહાય ફાઉન્ડેશન | ભાદરવી પૂનમ સેવા ૨૦૨૬
     </title>
 
+
     <meta name="description"
-        content="સદા સહાય ફાઉન્ડેશન દ્વારા ભાદરવી પૂનમ ૨૦૨૬ દરમિયાન અંબાજી જતા પદયાત્રિકો માટે ચા અને નાસ્તા પેકેટ સેવા.">
+        content="સદા સહાય ફાઉન્ડેશન દ્વારા ભાદરવી પૂનમ ૨૦૨૬ દરમિયાન અંબાજી જતા પદયાત્રિકો માટે ચા અને નાસ્તા પેકેટ સેવા."
+        data-i18n-content="indexMetaDescription">
 
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://YOUR-DOMAIN.com/">
 
-    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/fav-icon.png">
 
-    <link rel="icon" type="image/png" href="./assets/logo.png">
 
-    <!-- Open Graph -->
+    <!-- OPEN GRAPH -->
 
     <meta property="og:type" content="website">
 
@@ -36,7 +37,8 @@
 
     <meta property="og:site_name" content="સદા સહાય ફાઉન્ડેશન">
 
-    <!-- Twitter / X -->
+
+    <!-- TWITTER -->
 
     <meta name="twitter:card" content="summary_large_image">
 
@@ -46,7 +48,8 @@
 
     <meta name="twitter:image" content="https://YOUR-DOMAIN.com/assets/hero-desktop.png">
 
-    <!-- Google Font -->
+
+    <!-- GOOGLE FONT -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -55,17 +58,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+
+    <!-- MAIN CSS -->
+
     <link rel="stylesheet" href="./css/style.css">
 
+
+    <!-- STRUCTURED DATA -->
+
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "સદા સહાય ફાઉન્ડેશન",
-    "url": "https://YOUR-DOMAIN.com/",
-    "logo": "https://YOUR-DOMAIN.com/assets/logo.png"
-}
-</script>
+
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "સદા સહાય ફાઉન્ડેશન",
+        "url": "https://YOUR-DOMAIN.com/",
+        "logo": "https://YOUR-DOMAIN.com/assets/logo.png"
+    }
+
+    </script>
+
 </head>
 
 
@@ -80,6 +92,7 @@
 
         <div class="container nav-wrapper">
 
+
             <a href="./index.html" class="brand">
 
                 <img src="./assets/logo.png" alt="સદા સહાય ફાઉન્ડેશન" class="brand-logo">
@@ -87,61 +100,138 @@
             </a>
 
 
+
+            <!-- DESKTOP NAV -->
+
             <nav class="desktop-nav">
 
-                <a href="#seva">
+
+                <a href="#seva" data-i18n="navSeva">
                     સેવા
                 </a>
-                <a href="./about.html">
+
+
+                <a href="./about.html" data-i18n="navOurSeva">
                     અમારી સેવા
                 </a>
 
-                <a href="#impact">
+
+                <a href="#impact" data-i18n="navImpact">
                     સેવા પ્રભાવ
                 </a>
-                <a href="./contact.html">સંપર્ક</a>
 
-                <a href="./status.html">
+
+                <a href="./contact.html" data-i18n="contact">
+                    સંપર્ક
+                </a>
+
+
+                <a href="./status.html" data-i18n="status">
                     મારી સેવા
                 </a>
 
-                <a href="./donate.html" class="nav-donate">
+
+                <a href="./donate.html" class="nav-donate" data-i18n="donate">
                     સહયોગ આપો
                 </a>
 
 
 
+                <!-- LANGUAGE SWITCHER -->
+
+                <div class="language-switcher">
+
+
+                    <button type="button" data-language="gu">
+                        ગુજરાતી
+                    </button>
+
+
+                    <button type="button" data-language="hi">
+                        हिन्दी
+                    </button>
+
+
+                    <button type="button" data-language="en">
+                        English
+                    </button>
+
+
+                </div>
+
+
             </nav>
 
+
+
+            <!-- MOBILE MENU BUTTON -->
 
             <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="મેનુ ખોલો">
                 ☰
             </button>
 
+
         </div>
 
 
+
+        <!-- =========================================
+         MOBILE MENU
+    ========================================= -->
+
         <div class="mobile-menu" id="mobileMenu">
 
-            <a href="#seva">
+
+            <a href="#seva" data-i18n="navSeva">
                 સેવા
             </a>
-            <a href="./about.html">
+
+
+            <a href="./about.html" data-i18n="navOurSeva">
                 અમારી સેવા
             </a>
 
-            <a href="#impact">
+
+            <a href="#impact" data-i18n="navImpact">
                 સેવા પ્રભાવ
             </a>
 
-            <a href="./status.html">
+
+            <a href="./status.html" data-i18n="status">
                 મારી સેવા
             </a>
-            <a href="./contact.html">સંપર્ક</a>
-            <a href="./donate.html">
+
+
+            <a href="./contact.html" data-i18n="contact">
+                સંપર્ક
+            </a>
+
+
+            <a href="./donate.html" data-i18n="donateForSeva">
                 સેવા માટે સહયોગ
             </a>
 
+
+
+            <div class="language-switcher">
+
+
+                <button type="button" data-language="gu">
+                    ગુજરાતી
+                </button>
+
+
+                <button type="button" data-language="hi">
+                    हिन्दी
+                </button>
+
+
+                <button type="button" data-language="en">
+                    English
+                </button>
+
+
+            </div>
 
 
         </div>
@@ -149,63 +239,80 @@
     </header>
 
 
+
     <!-- =========================================
-     HERO
+     MAIN
 ========================================= -->
 
     <main>
 
 
+
+        <!-- =========================================
+     HERO
+========================================= -->
+
         <section class="hero">
 
-            <div class="hero-overlay"></div>
+
+            <div class="hero-overlay">
+            </div>
 
 
             <div class="container hero-content">
 
-                <div class="hero-label">
+
+                <div class="hero-label" data-i18n="campaignTitle">
                     ભાદરવી પૂનમ સેવા ૨૦૨૬
                 </div>
 
 
+
                 <h1>
 
-                    અંબાજી જતા
-                    <span>પદયાત્રિકો માટે</span>
+                    <span class="hero-main-white" data-i18n="heroLine1">
+                        અંબાજી જતા
+                    </span>
+
+                    <span data-i18n="heroPilgrims">
+                        પદયાત્રિકો <br>માટે
+                    </span>
 
                     <br>
 
-                    ચા અને નાસ્તા પેકેટ સેવા
+                    <span class="hero-main-white" data-i18n="heroService">
+                        ચા અને નાસ્તા પેકેટ સેવા
+                    </span>
 
                 </h1>
 
 
-                <p>
 
+                <p data-i18n="heroLocation">
                     વિસનગર–અંબાજી મુખ્ય માર્ગ પર,
                     સતલાસણા નજીક
-
                 </p>
+
 
 
                 <div class="hero-actions">
 
-                    <a href="./donate.html" class="btn btn-primary">
 
+                    <a href="./donate.html" class="btn btn-primary" data-i18n="donateForSeva">
                         સેવા માટે સહયોગ આપો
-
                     </a>
 
 
-                    <a href="#seva" class="btn btn-secondary">
-
+                    <a href="#seva" class="btn btn-secondary" data-i18n="knowOurSeva">
                         અમારી સેવા જાણો
-
                     </a>
+
 
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -217,47 +324,62 @@
 
         <section class="trust-bar">
 
+
             <div class="container trust-grid">
 
+
                 <div>
+
 
                     <strong>
                         ☕
                     </strong>
 
-                    <span>
+
+                    <span data-i18n="tea">
                         ચા સેવા
                     </span>
+
 
                 </div>
 
 
+
                 <div>
+
 
                     <strong>
                         🍱
                     </strong>
 
-                    <span>
+
+                    <span data-i18n="snacks">
                         નાસ્તા પેકેટ સેવા
                     </span>
+
 
                 </div>
 
 
+
                 <div>
+
 
                     <strong>
                         ✓
                     </strong>
 
-                    <span>
+
+                    <span data-i18n="verifiedSevaSupport">
                         ચકાસાયેલ સેવા સહયોગ
                     </span>
 
+
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -269,71 +391,81 @@
 
         <section class="section intro-section" id="seva">
 
+
             <div class="container intro-grid">
 
 
                 <div class="intro-image">
-
-
                 </div>
+
 
 
                 <div class="intro-content">
 
-                    <span class="eyebrow">
+
+                    <span class="eyebrow" data-i18n="seva">
                         સેવા
                     </span>
 
 
-                    <h2>
+
+                    <h2 data-i18n="introHeading">
                         પગલે પગલે ભક્તિ.
                         પગલે પગલે સેવા
                     </h2>
 
 
-                    <p>
 
+                    <p data-i18n="introParagraph1">
                         ભાદરવી પૂનમ દરમિયાન અંબાજી તરફ
                         જતા પદયાત્રિકો માટે સદા સહાય ફાઉન્ડેશન
                         દ્વારા ચા અને નાસ્તા પેકેટ સેવાનું આયોજન કરવામાં
                         આવે છે.
-
                     </p>
 
 
-                    <p>
 
+                    <p data-i18n="introParagraph2">
                         અમારી સેવા વિસનગર–અંબાજી મુખ્ય માર્ગ
                         પર સતલાસણા નજીક યાત્રિકો સુધી પહોંચાડવામાં
                         આવશે.
-
                     </p>
 
 
+
                     <div class="location-box">
+
 
                         <span>
                             📍
                         </span>
 
+
                         <div>
 
-                            <strong>
+
+                            <strong data-i18n="serviceLocation">
                                 સેવા સ્થળ
                             </strong>
 
-                            <p>
+
+                            <p data-i18n="serviceLocationValue">
                                 સતલાસણા નજીક,
                                 વિસનગર–અંબાજી મુખ્ય માર્ગ
                             </p>
 
+
                         </div>
+
 
                     </div>
 
+
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -345,49 +477,64 @@
 
         <section class="section service-section">
 
+
             <div class="container">
+
 
                 <div class="section-heading">
 
-                    <span class="eyebrow">
+
+                    <span class="eyebrow" data-i18n="ourSeva">
                         અમારી સેવા
                     </span>
 
-                    <h2>
+
+                    <h2 data-i18n="serviceHeading">
                         યાત્રિકો માટે જરૂરી સહયોગ
                     </h2>
 
-                    <p>
+
+                    <p data-i18n="serviceSubtitle">
                         સરળ સેવા, સીધી જરૂરિયાત અને સાચો ઉપયોગ.
                     </p>
 
+
                 </div>
+
 
 
                 <div class="service-grid">
 
 
+
                     <article class="service-card">
+
 
                         <div class="service-icon">
                             ☕
                         </div>
 
+
                         <div>
 
-                            <h3>
+
+                            <h3 data-i18n="teaService">
                                 ચા સેવા
                             </h3>
 
-                            <p>
+
+                            <p data-i18n="teaCostText">
                                 એક કપ ચાનો અંદાજિત ખર્ચ
                             </p>
+
 
                             <strong>
                                 ₹10
                             </strong>
 
+
                         </div>
+
 
                     </article>
 
@@ -395,32 +542,41 @@
 
                     <article class="service-card">
 
+
                         <div class="service-icon">
                             🍱
                         </div>
 
+
                         <div>
 
-                            <h3>
+
+                            <h3 data-i18n="snackService">
                                 નાસ્તા પેકેટ સેવા
                             </h3>
 
-                            <p>
+
+                            <p data-i18n="snackCostText">
                                 એક નાસ્તા પેકેટનો અંદાજિત ખર્ચ
                             </p>
+
 
                             <strong>
                                 ₹5–₹10
                             </strong>
 
+
                         </div>
+
 
                     </article>
 
 
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -432,23 +588,30 @@
 
         <section class="section impact-section" id="impact">
 
+
             <div class="container">
+
 
                 <div class="section-heading light-heading">
 
-                    <span class="eyebrow">
+
+                    <span class="eyebrow" data-i18n="impact">
                         સેવા પ્રભાવ
                     </span>
 
-                    <h2>
+
+                    <h2 data-i18n="impactHeading">
                         મળેલ સહયોગનો ઉપયોગ
                     </h2>
 
-                    <p>
+
+                    <p data-i18n="impactSubtitle">
                         અહીં માત્ર ચકાસાયેલ સેવા સહયોગ દર્શાવવામાં આવશે.
                     </p>
 
+
                 </div>
+
 
 
                 <div class="impact-grid">
@@ -456,17 +619,21 @@
 
                     <div class="impact-card">
 
-                        <span>
+
+                        <span data-i18n="totalReceived">
                             અત્યાર સુધી મળેલ
                         </span>
+
 
                         <strong id="totalCollected">
                             ₹0
                         </strong>
 
-                        <small>
+
+                        <small data-i18n="verifiedSupport">
                             ચકાસાયેલ સેવા સહયોગ
                         </small>
+
 
                     </div>
 
@@ -474,24 +641,30 @@
 
                     <div class="impact-card">
 
-                        <span>
+
+                        <span data-i18n="supporters">
                             સેવા સહયોગીઓ
                         </span>
+
 
                         <strong id="supporterCount">
                             0
                         </strong>
 
-                        <small>
+
+                        <small data-i18n="verifiedContribution">
                             ચકાસાયેલ સહયોગ
                         </small>
+
 
                     </div>
 
 
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -503,34 +676,41 @@
 
         <section class="section supporters-section">
 
+
             <div class="container">
+
 
                 <div class="section-heading">
 
-                    <span class="eyebrow">
+
+                    <span class="eyebrow" data-i18n="sevaSupport">
                         સેવા સહયોગ
                     </span>
 
-                    <h2>
+
+                    <h2 data-i18n="recentSupporters">
                         તાજેતરના સેવા સહયોગીઓ
                     </h2>
+
 
                 </div>
 
 
+
                 <div class="supporters-list" id="recentDonors">
 
-                    <div class="loading-card">
 
+                    <div class="loading-card" data-i18n="loadingSupporters">
                         સેવા સહયોગીઓની માહિતી
                         લોડ થઈ રહી છે...
-
                     </div>
+
 
                 </div>
 
 
             </div>
+
 
         </section>
 
@@ -542,36 +722,41 @@
 
         <section class="section status-section">
 
+
             <div class="container status-box">
+
 
                 <div>
 
-                    <span class="eyebrow">
+
+                    <span class="eyebrow" data-i18n="digitalSeva">
                         DIGITAL SEVA
                     </span>
 
-                    <h2>
+
+                    <h2 data-i18n="checkMySevaHeading">
                         તમારી સેવા તપાસો
                     </h2>
 
-                    <p>
 
+                    <p data-i18n="statusDescription">
                         તમને મળેલ Seva ID અથવા
                         Donation Reference દ્વારા
                         તમારી સેવા અને ચુકવણીની સ્થિતિ તપાસો.
-
                     </p>
+
 
                 </div>
 
 
-                <a href="./status.html" class="btn btn-light">
 
+                <a href="./status.html" class="btn btn-light" data-i18n="checkSeva">
                     સેવા તપાસો
-
                 </a>
 
+
             </div>
+
 
         </section>
 
@@ -583,33 +768,36 @@
 
         <section class="donate-cta">
 
+
             <div class="container">
 
-                <span class="eyebrow">
+
+                <span class="eyebrow" data-i18n="yourSupportMatters">
                     YOUR SUPPORT MATTERS
                 </span>
 
 
-                <h2>
+                <h2 data-i18n="donateHeading">
                     તમારી નાની મદદ,
                     કોઈ યાત્રિક માટે મોટી સેવા બની શકે છે.
                 </h2>
 
 
-                <p>
+                <p data-i18n="donateSubtitle">
                     ચા અથવા ભોજન સેવામાં તમારો સહયોગ આપો.
                 </p>
 
 
-                <a href="./donate.html" class="btn btn-primary btn-large">
-
+                <a href="./donate.html" class="btn btn-primary btn-large" data-i18n="donateForSeva">
                     સેવા માટે સહયોગ આપો
-
                 </a>
+
 
             </div>
 
+
         </section>
+
 
 
     </main>
@@ -622,69 +810,94 @@
 
     <footer class="site-footer">
 
+
         <div class="container footer-grid">
 
 
+
             <div>
+
 
                 <img src="./assets/logo.png" alt="સદા સહાય ફાઉન્ડેશન" class="footer-logo">
 
-                <p>
 
+                <p data-i18n="footerTagline">
                     સેવા • સહયોગ • વિશ્વાસ
-
                 </p>
+
 
             </div>
 
 
+
             <div>
 
-                <h3>
+
+                <h3 data-i18n="quickLinks">
                     ઝડપી લિંક્સ
                 </h3>
 
-                <a href="./donate.html">
+
+
+                <a href="./donate.html" data-i18n="donateForSeva">
                     સેવા માટે સહયોગ
                 </a>
 
-                <a href="./status.html">
+
+
+                <a href="./status.html" data-i18n="status">
                     મારી સેવા
                 </a>
-                <a href="./about.html">
+
+
+
+                <a href="./about.html" data-i18n="about">
                     અમારા વિશે
                 </a>
 
-                <a href="./contact.html">
+
+
+                <a href="./contact.html" data-i18n="contact">
                     સંપર્ક
                 </a>
 
-                <a href="./privacy.html">
+
+
+                <a href="./privacy.html" data-i18n="privacy">
                     Privacy Policy
                 </a>
 
-                <a href="./terms.html">
+
+
+                <a href="./terms.html" data-i18n="terms">
                     નિયમો અને શરતો
                 </a>
 
+
             </div>
+
 
 
             <div>
 
-                <h3>
+
+                <h3 data-i18n="serviceLocation">
                     સેવા સ્થળ
                 </h3>
 
-                <p>
+
+                <p data-i18n="locationSatlasana">
                     સતલાસણા નજીક
                 </p>
 
-                <p>
+
+                <p data-i18n="locationRoute">
                     વિસનગર–અંબાજી મુખ્ય માર્ગ
                 </p>
 
+
             </div>
+
 
         </div>
 
@@ -696,62 +909,112 @@
 
         </div>
 
+
     </footer>
 
 
 
-    <script type="module" src="./js/main.js">
-    </script>
+    <!-- =========================================
+     MAIN JS
+========================================= -->
+
+    <script type="module" src="./js/main.js"></script>
+
+
+
+    <!-- =========================================
+     MOBILE MENU
+========================================= -->
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
 
-            const button =
-                document.getElementById("mobileMenuBtn");
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
 
-            const menu =
-                document.getElementById("mobileMenu");
+                const button =
+                    document.getElementById(
+                        "mobileMenuBtn"
+                    );
+
+                const menu =
+                    document.getElementById(
+                        "mobileMenu"
+                    );
 
 
-            console.log("MENU SYSTEM:", {
-                button: button,
-                menu: menu
-            });
-
-
-            if (!button || !menu) {
-
-                console.error(
-                    "Mobile menu elements were not found."
+                console.log(
+                    "MENU SYSTEM:",
+                    {
+                        button: button,
+                        menu: menu
+                    }
                 );
 
-                return;
+
+                if (!button || !menu) {
+
+                    console.error(
+                        "Mobile menu elements were not found."
+                    );
+
+                    return;
+
+                }
+
+
+                button.addEventListener(
+                    "click",
+                    function (event) {
+
+                        event.preventDefault();
+
+                        event.stopPropagation();
+
+                        console.log(
+                            "MENU CLICKED"
+                        );
+
+                        menu.classList.toggle(
+                            "open"
+                        );
+
+                    }
+                );
+
+
+                menu
+                    .querySelectorAll("a")
+                    .forEach(
+                        function (link) {
+
+                            link.addEventListener(
+                                "click",
+                                function () {
+
+                                    menu.classList.remove(
+                                        "open"
+                                    );
+
+                                }
+                            );
+
+                        }
+                    );
+
             }
+        );
 
-
-            button.addEventListener("click", function (event) {
-
-                event.preventDefault();
-                event.stopPropagation();
-
-                console.log("MENU CLICKED");
-
-                menu.classList.toggle("open");
-
-            });
-
-
-            menu.querySelectorAll("a").forEach(function (link) {
-
-                link.addEventListener("click", function () {
-
-                    menu.classList.remove("open");
-
-                });
-
-            });
-
-        });
     </script>
+
+
+
+    <!-- =========================================
+     LANGUAGE SYSTEM
+========================================= -->
+
+    <script type="module" src="./js/language.js"></script>
+
 
 </body>
 

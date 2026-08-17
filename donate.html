@@ -10,13 +10,14 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>
+    <title data-i18n-title="donatePageTitle">
         સેવા માટે સહયોગ | સદા સહાય ફાઉન્ડેશન
     </title>
 
     <meta
         name="description"
         content="સદા સહાય ફાઉન્ડેશનની ભાદરવી પૂનમ ૨૦૨૬ સેવા માટે સહયોગ આપો. પદયાત્રિકો માટે ચા અને નાસ્તા પેકેટ સેવામાં સહભાગી બનો."
+        data-i18n-content="donateMetaDescription"
     >
 
     <meta
@@ -36,6 +37,11 @@
         rel="icon"
         type="image/png"
         href="./assets/logo.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/donate.css"
     >
 
 </head>
@@ -70,7 +76,10 @@
             class="back-home"
         >
 
-            ← પાછા જાઓ
+            ←
+            <span data-i18n="backToHomeDonate">
+                પાછા જાઓ
+            </span>
 
         </a>
 
@@ -95,18 +104,28 @@
 
     <div class="donation-container">
 
-        <span class="donation-eyebrow">
+        <span
+            class="donation-eyebrow"
+            data-i18n="donationCampaign"
+        >
             ભાદરવી પૂનમ સેવા ૨૦૨૬
         </span>
 
 
         <h1>
-            સેવા માટે
-            <span>સહયોગ આપો</span>
+
+            <span data-i18n="donateFor">
+                સેવા માટે
+            </span>
+
+            <span data-i18n="donateSupport">
+                સહયોગ આપો
+            </span>
+
         </h1>
 
 
-        <p>
+        <p data-i18n="donationIntroDescription">
             અંબાજી જતા પદયાત્રિકો માટે
             ચા અને નાસ્તા પેકેટ સેવામાં
             તમારી શક્તિ મુજબ સહયોગ આપો.
@@ -135,11 +154,11 @@
 
             <div>
 
-                <strong>
+                <strong data-i18n="teaService">
                     ચા સેવા
                 </strong>
 
-                <small>
+                <small data-i18n="teaEstimatedCost">
                     અંદાજિત ₹10
                 </small>
 
@@ -157,11 +176,11 @@
 
             <div>
 
-                <strong>
+                <strong data-i18n="snackPacket">
                     નાસ્તા પેકેટ
                 </strong>
 
-                <small>
+                <small data-i18n="snackEstimatedCost">
                     અંદાજિત ₹5–₹10
                 </small>
 
@@ -179,11 +198,11 @@
 
             <div>
 
-                <strong>
+                <strong data-i18n="verifiedSeva">
                     ચકાસાયેલ સેવા
                 </strong>
 
-                <small>
+                <small data-i18n="afterPaymentVerification">
                     ચુકવણી ચકાસણી બાદ
                 </small>
 
@@ -213,18 +232,21 @@
 
             <div class="info-card">
 
-                <span class="card-eyebrow">
+                <span
+                    class="card-eyebrow"
+                    data-i18n="yourSeva"
+                >
                     તમારી સેવા
                 </span>
 
 
-                <h2>
+                <h2 data-i18n="smallHelpBigSeva">
                     નાની મદદ,
                     મોટી સેવા
                 </h2>
 
 
-                <p>
+                <p data-i18n="donationInfoDescription">
                     તમારો સહયોગ અંબાજી તરફ જતા
                     પદયાત્રિકો માટે ચા અને નાસ્તા
                     પેકેટની સેવા પહોંચાડવામાં મદદરૂપ બનશે.
@@ -243,11 +265,12 @@
 
                 <div>
 
-                    <strong>
+                    <strong data-i18n="serviceLocation">
                         સેવા સ્થળ
                     </strong>
 
-                    <p>
+
+                    <p data-i18n="serviceLocationAddress">
                         સતલાસણા નજીક,
                         વિસનગર–અંબાજી મુખ્ય માર્ગ
                     </p>
@@ -264,7 +287,8 @@
                     ✓
                 </span>
 
-                <p>
+
+                <p data-i18n="finalPaymentVerification">
                     ચુકવણીની અંતિમ પુષ્ટિ
                     અમારી ટીમ દ્વારા ચકાસણી
                     કર્યા પછી કરવામાં આવશે.
@@ -284,17 +308,20 @@
 
             <div class="form-header">
 
-                <span class="card-eyebrow">
+                <span
+                    class="card-eyebrow"
+                    data-i18n="sevaContribution"
+                >
                     સેવા સહયોગ
                 </span>
 
 
-                <h2>
+                <h2 data-i18n="giveYourDetails">
                     તમારી વિગતો આપો
                 </h2>
 
 
-                <p>
+                <p data-i18n="fillDetailsDescription">
                     નીચેની માહિતી ભરીને સેવા માટે આગળ વધો.
                 </p>
 
@@ -311,7 +338,10 @@
 
                 <div class="form-group">
 
-                    <label for="amount">
+                    <label
+                        for="amount"
+                        data-i18n="contributionAmount"
+                    >
                         સહયોગ રકમ
                         <span>*</span>
                     </label>
@@ -322,7 +352,10 @@
                         required
                     >
 
-                        <option value="">
+                        <option
+                            value=""
+                            data-i18n="selectAmount"
+                        >
                             રકમ પસંદ કરો
                         </option>
 
@@ -346,7 +379,10 @@
                             ₹2,501
                         </option>
 
-                        <option value="other">
+                        <option
+                            value="other"
+                            data-i18n="otherAmount"
+                        >
                             અન્ય રકમ
                         </option>
 
@@ -366,7 +402,10 @@
                     hidden
                 >
 
-                    <label for="customAmount">
+                    <label
+                        for="customAmount"
+                        data-i18n="yourAmount"
+                    >
 
                         તમારી રકમ
                         <span>*</span>
@@ -379,6 +418,7 @@
                         <span>
                             ₹
                         </span>
+
 
                         <input
                             type="number"
@@ -400,7 +440,10 @@
 
                 <div class="form-group">
 
-                    <label for="name">
+                    <label
+                        for="name"
+                        data-i18n="nameLabel"
+                    >
 
                         નામ
                         <span>*</span>
@@ -427,7 +470,10 @@
 
                 <div class="form-group">
 
-                    <label for="mobile">
+                    <label
+                        for="mobile"
+                        data-i18n="mobileLabel"
+                    >
 
                         મોબાઇલ નંબર
                         <span>*</span>
@@ -446,7 +492,10 @@
                     >
 
 
-                    <small class="field-help">
+                    <small
+                        class="field-help"
+                        data-i18n="mobileHelp"
+                    >
                         10 અંકનો મોબાઇલ નંબર દાખલ કરો.
                     </small>
 
@@ -460,7 +509,10 @@
 
                 <div class="form-group">
 
-                    <label for="email">
+                    <label
+                        for="email"
+                        data-i18n="emailLabel"
+                    >
                         ઈમેલ
                     </label>
 
@@ -474,7 +526,10 @@
                     >
 
 
-                    <small class="field-help">
+                    <small
+                        class="field-help"
+                        data-i18n="emailHelp"
+                    >
                         ઈમેલ આપશો તો સેવા સંબંધિત માહિતી મોકલી શકાશે.
                     </small>
 
@@ -498,7 +553,10 @@
                     </span>
 
 
-                    <span class="checkbox-text">
+                    <span
+                        class="checkbox-text"
+                        data-i18n="showPublicName"
+                    >
 
                         મારું નામ સેવા સહયોગીઓમાં દર્શાવો
 
@@ -518,7 +576,8 @@
                         ✓
                     </span>
 
-                    <p>
+
+                    <p data-i18n="paymentTrustMessage">
                         તમારી ચુકવણી પહેલા નોંધાશે અને
                         અમારી ટીમ દ્વારા ચકાસણી થયા પછી
                         સેવા પુષ્ટિ કરવામાં આવશે.
@@ -537,15 +596,17 @@
                     class="donation-submit"
                 >
 
-                    <span>
+                    <span data-i18n="proceedForSeva">
                         સેવા માટે આગળ વધો
                     </span>
+
 
                     <span class="submit-arrow">
                         →
                     </span>
 
                 </button>
+
 
 
                 <!-- =========================
@@ -577,11 +638,12 @@
 
     <div class="donation-container">
 
-        <p>
+        <p data-i18n="footerTagline">
             સેવા • સહયોગ • વિશ્વાસ
         </p>
 
-        <span>
+
+        <span data-i18n="copyright">
             © 2026 Sada Sahay Foundation
         </span>
 
@@ -601,6 +663,11 @@
 <script
     type="module"
     src="./js/donation.js"
+></script>
+
+<script
+    type="module"
+    src="./js/language.js"
 ></script>
 
 

@@ -10,13 +10,14 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>
+    <title data-i18n-title="statusPageTitle">
         મારી સેવા તપાસો | સદા સહાય ફાઉન્ડેશન
     </title>
 
     <meta
         name="description"
         content="તમારો Seva ID અથવા Donation Reference દાખલ કરીને સદા સહાય ફાઉન્ડેશનની સેવા અને ચુકવણીની સ્થિતિ તપાસો."
+        data-i18n-content="statusMetaDescription"
     >
 
     <meta
@@ -27,6 +28,11 @@
     <link
         rel="canonical"
         href="https://YOUR-DOMAIN.com/status.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/status.css"
     >
 
     <link
@@ -68,7 +74,10 @@
             class="back-home"
         >
 
-            ← મુખ્ય પેજ
+            ←
+            <span data-i18n="backToHome">
+                મુખ્ય પેજ
+            </span>
 
         </a>
 
@@ -89,17 +98,20 @@
 
     <div class="status-container">
 
-        <span class="eyebrow">
+        <span
+            class="eyebrow"
+            data-i18n="statusEyebrow"
+        >
             SEVA STATUS
         </span>
 
 
-        <h1>
+        <h1 data-i18n="statusHeroHeading">
             મારી સેવા તપાસો
         </h1>
 
 
-        <p>
+        <p data-i18n="statusHeroDescription">
             તમારી સેવા અને ચુકવણીની સ્થિતિ
             સરળતાથી તપાસો.
         </p>
@@ -128,17 +140,20 @@
             </div>
 
 
-            <span class="card-label">
+            <span
+                class="card-label"
+                data-i18n="sevaIdLabel"
+            >
                 સેવા ID
             </span>
 
 
-            <h2>
+            <h2 data-i18n="checkBySevaId">
                 સેવા ID દ્વારા તપાસો
             </h2>
 
 
-            <p>
+            <p data-i18n="sevaIdDescription">
                 તમને વ્યક્તિગત રીતે આપવામાં આવેલ
                 Seva ID અહીં દાખલ કરો.
             </p>
@@ -146,7 +161,10 @@
 
             <form id="sevaForm">
 
-                <label for="sevaIdInput">
+                <label
+                    for="sevaIdInput"
+                    data-i18n="sevaIdLabel"
+                >
                     સેવા ID
                 </label>
 
@@ -162,7 +180,11 @@
                         placeholder="BP26-SXXXXXXXX"
                     >
 
-                    <button type="submit">
+
+                    <button
+                        type="submit"
+                        data-i18n="checkButton"
+                    >
                         તપાસો
                     </button>
 
@@ -183,17 +205,20 @@
             </div>
 
 
-            <span class="card-label">
+            <span
+                class="card-label"
+                data-i18n="donationReferenceLabel"
+            >
                 સેવા સંદર્ભ
             </span>
 
 
-            <h2>
+            <h2 data-i18n="checkByReference">
                 સેવા સંદર્ભ દ્વારા તપાસો
             </h2>
 
 
-            <p>
+            <p data-i18n="referenceDescription">
                 Seva ID હજુ મળ્યો નથી?
                 તમારા Donation Reference દ્વારા
                 ચુકવણીની સ્થિતિ તપાસો.
@@ -202,7 +227,10 @@
 
             <form id="referenceForm">
 
-                <label for="referenceInput">
+                <label
+                    for="referenceInput"
+                    data-i18n="donationReferenceLabel"
+                >
                     સેવા સંદર્ભ
                 </label>
 
@@ -218,7 +246,11 @@
                         placeholder="BP26-PXXXXXXXX"
                     >
 
-                    <button type="submit">
+
+                    <button
+                        type="submit"
+                        data-i18n="checkButton"
+                    >
                         તપાસો
                     </button>
 
@@ -270,7 +302,10 @@
 
             <div class="result-header">
 
-                <span class="eyebrow">
+                <span
+                    class="eyebrow"
+                    data-i18n="statusEyebrow"
+                >
                     SEVA STATUS
                 </span>
 
@@ -286,7 +321,7 @@
 
             <div class="seva-id-box">
 
-                <span>
+                <span data-i18n="yourSevaId">
                     તમારી સેવા ID
                 </span>
 
@@ -306,7 +341,7 @@
 
                 <div class="detail-row">
 
-                    <span>
+                    <span data-i18n="donationReferenceLabel">
                         સેવા સંદર્ભ
                     </span>
 
@@ -320,7 +355,7 @@
 
                 <div class="detail-row">
 
-                    <span>
+                    <span data-i18n="sevaContribution">
                         સેવા સહયોગ
                     </span>
 
@@ -336,7 +371,7 @@
 
                 <div class="detail-row">
 
-                    <span>
+                    <span data-i18n="dateLabel">
                         તારીખ
                     </span>
 
@@ -350,7 +385,7 @@
 
                 <div class="detail-row">
 
-                    <span>
+                    <span data-i18n="statusLabel">
                         સ્થિતિ
                     </span>
 
@@ -372,11 +407,11 @@
 
             <div class="result-footer">
 
-                <span>
+                <span data-i18n="foundationName">
                     સદા સહાય ફાઉન્ડેશન
                 </span>
 
-                <small>
+                <small data-i18n="footerTagline">
                     સેવા • સહયોગ • વિશ્વાસ
                 </small>
 
@@ -401,19 +436,26 @@
         <div class="help-card">
 
             <div>
-                <span class="eyebrow">
+
+                <span
+                    class="eyebrow"
+                    data-i18n="help"
+                >
                     મદદ
                 </span>
 
-                <h2>
+
+                <h2 data-i18n="sevaIdNotReceived">
                     Seva ID હજુ મળ્યો નથી?
                 </h2>
 
-                <p>
+
+                <p data-i18n="sevaIdHelpDescription">
                     જો તમારી ચુકવણીની સ્થિતિ Confirmed છે
                     પરંતુ Seva ID વ્યક્તિગત રીતે મળ્યો નથી,
                     તો સેવા સંદર્ભ સાચવી રાખો.
                 </p>
+
             </div>
 
         </div>
@@ -433,7 +475,10 @@
 
 <footer class="status-footer">
 
-    <div class="status-container">
+    <div
+        class="status-container"
+        data-i18n="copyright"
+    >
 
         © 2026 Sada Sahay Foundation
 
@@ -445,8 +490,14 @@
 
 <script
     type="module"
-    src="./js/status.js">
-</script>
+    src="./js/status.js"
+></script>
+
+
+<script
+    type="module"
+    src="./js/language.js"
+></script>
 
 
 </body>
